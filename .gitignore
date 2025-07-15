@@ -1,0 +1,26 @@
+# Ignore backup archives (SQL + wp-content tarballs)
+backup/
+!backup/.gitkeep
+
+# Ignore wp-content (media, themes, plugins)
+wp-content/
+!wp-content/.gitkeep
+
+# Ignore Docker volumes and container metadata
+db_data/
+*.pid
+*.sock
+
+# Ignore log files
+*.log
+
+# Ignore system and editor files
+.DS_Store
+*.swp
+*.swo
+*.tmp
+
+# Ignore node/npm/VSCode or other optional junk
+node_modules/
+.env
+.vscode/
