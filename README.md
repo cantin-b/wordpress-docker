@@ -1,7 +1,5 @@
 # Running Wordpress with Docker
 
-Absolutely. Here’s a clean and ready-to-paste **"🚀 Docker Commands – Getting Started"** section for your `README.md`, designed to go at the top or right after your intro.
-
 ---
 
 ## 🚀 Docker Commands – Getting Started
@@ -69,11 +67,6 @@ docker stop wordpress_db
 ```bash
 docker compose build --no-cache
 ```
-
----
-
-Let me know if you'd like a "Docker Cheatsheet" section with even more (volume cleanup, network inspect, etc.).
-
 
 ---
 
