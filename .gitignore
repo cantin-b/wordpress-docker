@@ -1,3 +1,6 @@
+# Ignore wp-config.php (contains secrets and domain-specific config)
+wp-config.php
+
 # Ignore backup archives (SQL + wp-content tarballs)
 backup/
 !backup/.gitkeep

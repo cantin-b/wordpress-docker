@@ -243,6 +243,19 @@ chmod +x restore-on-new-server.sh
    ./restore-on-new-server.sh
    ```
 
+3. **Set your domain**:
+
+After restoring, edit your wp-config.php inside the wordpress container:
+
+```php
+define('WP_HOME', 'https://mywebsite.com');
+define('WP_SITEURL', 'https://mywebsite.com');
+```
+
+3. **Configure your NGINX reverse proxy**:
+
+Set up NGINX on the host to proxy traffic from HTTPS (port 443) to the internal WordPress container (port 8080)
+
 ---
 
 ## Done
@@ -250,5 +263,5 @@ chmod +x restore-on-new-server.sh
 Your WordPress site will be up at:
 
 ```
-http://<ip>:8080
+https://mywebsite.com
 ```
